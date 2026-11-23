@@ -738,7 +738,7 @@ function loadDB(){
 }
 /* ---- Version en ligne : synchronisation + sauvegarde sur le serveur ---- */
 const CLOUD_KEY = "academia-cloud";
-const CLOUD_URL = "";   // Adresse du serveur en ligne (Worker Cloudflare), à renseigner une fois avant publication
+const CLOUD_URL = "https://academia-sync.kinvospay.workers.dev";   // Adresse du serveur en ligne (Worker Cloudflare), à renseigner une fois avant publication
 const SYNC_COLLS = ["students","payments","revenues","expenses","cashManual","teachers","salaryPayments","bulletins","journal"];
 let cloud = (()=>{ try{ return JSON.parse(localStorage.getItem(CLOUD_KEY)||"null"); }catch(e){ return null; } })();
 let cloudBase = null, cloudSince = 0, cloudBusy = false, cloudTimer = null, cloudPoll = null, cloudPremierOK = false, cloudRerender = false;
