@@ -1,7 +1,7 @@
 /* Academia — service worker
    Pour publier une mise à jour : changer VERSION ci-dessous.
    Les utilisateurs verront alors « Nouvelle version disponible ». */
-const VERSION = "28";
+const VERSION = "42";
 const CACHE_NAME = "academia-cache-v" + VERSION;
 const PREFIXE_CACHE = "academia-cache-";
 
